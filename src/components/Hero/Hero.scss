@@ -1,0 +1,124 @@
+@import "../Colors.scss";
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, auto));
+  align-items: center;
+  justify-content: space-between;
+
+  &-svg-mobile {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    width: 90vw;
+  }
+
+  &-svg-desktop {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    width: 50vw;
+  }
+
+  &-content {
+    width: clamp(20rem, 100%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    padding: 0 2rem;
+  }
+  &-heading {
+    width: clamp(5rem, 110%, 60rem);
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: clamp(2.4rem, 4vw, 3.8rem);
+    letter-spacing: 0px;
+    line-height: 108.5%;
+    text-align: center;
+    color: grey(dark);
+    padding: 0 4rem;
+    margin-top: 4.2rem;
+  }
+
+  &-text {
+    width: clamp(10rem, 95%, 50rem);
+    color: grey(medium);
+    text-align: center;
+    font-family: Poppins;
+    font-size: clamp(1.4rem, 50%, 2rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 154%;
+    letter-spacing: 0.072rem;
+    margin-top: 2rem;
+  }
+
+  &-btns {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2.4rem;
+  }
+
+  &-btn {
+    width: clamp(14rem, 18vw, 16rem);
+    height: 5rem;
+    border: none;
+    border-radius: 10px;
+    color: grey(white);
+    font-size: 1.6rem;
+    font-weight: 600;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .learn-more-btn {
+    background-color: grey(medium);
+
+    &:hover {
+      background-color: #272727;
+    }
+  }
+
+  .start-btn {
+    background-color: $primary-color;
+    &:hover {
+      background-color: $primary-color-darker;
+      color: grey(white);
+    }
+  }
+}
+
+.hero-padding {
+  padding-top: 9rem;
+}
+
+@media screen and (max-width: 3000px) {
+  html {
+    font-size: 12px;
+  }
+
+  .hero-svg-desktop {
+    display: flex;
+  }
+
+  .hero-svg-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .hero-svg-desktop {
+    display: none;
+  }
+  .hero-svg-mobile {
+    display: flex;
+  }
+}

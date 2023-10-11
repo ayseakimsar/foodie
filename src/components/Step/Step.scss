@@ -1,0 +1,63 @@
+@import "../Colors.scss";
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.step-svg {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.step-heading {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  color: grey(medium);
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+  margin-top: 2rem;
+}
+
+.step-text {
+  display: block;
+  width: 70%;
+  color: grey(medium);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 147%;
+  letter-spacing: 0.032rem;
+  margin-top: 1rem;
+}
+
+.step1 {
+  position: absolute;
+  top: -3rem;
+  left: -2rem;
+}
+
+.step2 {
+  position: absolute;
+  top: 40%;
+
+  .step-svg {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.step3 {
+  position: absolute;
+  top: 85%;
+  left: -2rem;
+
+  .step-svg {
+    width: 37%;
+    display: flex;
+    justify-content: center;
+  }
+}

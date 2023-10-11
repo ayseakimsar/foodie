@@ -1,0 +1,81 @@
+@import "../Colors.scss";
+.meal-plans-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30rem;
+}
+.meal-plans {
+  width: 100%;
+  background-color: $primary-color;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 83% 54% 81% 54% / 5% 7% 6% 5%;
+}
+
+.background {
+  width: 100%;
+  position: absolute;
+  top: 150%;
+  z-index: -100;
+}
+
+.meal-plan-header {
+  margin-top: 10rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.plan-category {
+  color: grey(white);
+  font-family: Quicksand;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.04rem;
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.see-more-btn {
+  font-family: Quicksand;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-left: 15rem;
+  background-color: transparent;
+  color: grey(white);
+  font-size: 1.4rem;
+  border: none;
+  border-bottom: 2px solid white;
+  padding: 0.4rem 0;
+  width: 10rem;
+  margin-bottom: 5rem;
+}
+
+.right-arrow {
+  font-family: Quicksand;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.see-all-btn {
+  justify-self: center;
+  width: 20rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  font-family: Quicksand;
+  font-weight: 700;
+  border: 3px solid white;
+  padding: 2rem 2rem;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+}

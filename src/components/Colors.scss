@@ -1,0 +1,16 @@
+$text-color: (
+  white: #fff,
+  light: #555,
+  medium: #444,
+  dark: #333,
+  darkest: #272727,
+);
+
+@function grey($grey-name) {
+  @return map-get($text-color, $grey-name);
+}
+
+$primary-color: #008e73;
+$primary-color-darker: #00725c;
+$secondary-color: #e64d11;
+$secondary-color-darker: #cf450f;
