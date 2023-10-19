@@ -8,7 +8,7 @@ export default function Pricing() {
       <SectionHeader
         primaryHeading="pricing"
         secondaryHeading="Explore our wallet-friendly solutions for a healthier lifestyle"
-      />
+      />{" "}
       <div className="price-cards">
         <PriceCard
           plan="starter"

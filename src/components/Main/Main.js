@@ -8,6 +8,7 @@ import Testimonials from "../Testimonials/Testimonials";
 import Pricing from "../Pricing/Pricing";
 import CallToAction from "../CallToAction/CallToAction";
 import Footer from "../Footer/Footer";
+import "./Main.scss";
 
 export default function Main() {
   const [isSticky, setIsSticky] = useState(false);
@@ -28,16 +29,18 @@ export default function Main() {
     };
   }, []);
   return (
-    <>
+    <div className="main">
       <Header isSticky={isSticky} />
-      <Hero isSticky={isSticky} />
-      {/* <Element name="how-it-works">
+      <Element name="hero">
+        <Hero isSticky={isSticky} />
+      </Element>
+      <Element name="how-it-works">
         <HowItWorks />
-      </Element> */}
+      </Element>
       <Element name="meal-plans">
         <MealPlans />
       </Element>
-      {/* <Element name="testimonials">
+      <Element name="testimonials">
         <Testimonials />
       </Element>
       <Element name="pricing">
@@ -45,8 +48,8 @@ export default function Main() {
       </Element>
       <Element name="cta">
         <CallToAction />
-      </Element> */}
+      </Element>
       <Footer />
-    </>
+    </div>
   );
 }

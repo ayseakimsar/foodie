@@ -6,8 +6,9 @@ export default function Nav({ setIsNavOpen, className }) {
       <Link
         to="how-it-works"
         smooth={true}
+        offset={-80}
         duration={400}
-        className={className}
+        className="nav-link"
         onClick={() => setIsNavOpen(false)}
       >
         How it works
@@ -15,6 +16,7 @@ export default function Nav({ setIsNavOpen, className }) {
       <Link
         to="meal-plans"
         smooth={true}
+        offset={-100}
         duration={400}
         className="nav-link"
         onClick={() => setIsNavOpen(false)}
@@ -25,6 +27,7 @@ export default function Nav({ setIsNavOpen, className }) {
       <Link
         to="testimonials"
         smooth={true}
+        offset={-120}
         duration={400}
         className="nav-link"
         onClick={() => setIsNavOpen(false)}
@@ -35,6 +38,7 @@ export default function Nav({ setIsNavOpen, className }) {
         to="pricing"
         smooth={true}
         duration={400}
+        offset={-120}
         className="nav-link"
         onClick={() => setIsNavOpen(false)}
       >
@@ -44,6 +48,7 @@ export default function Nav({ setIsNavOpen, className }) {
         to="cta"
         smooth={true}
         duration={400}
+        offset={-110}
         className="nav-link"
         onClick={() => setIsNavOpen(false)}
       >

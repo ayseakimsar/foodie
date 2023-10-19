@@ -31,6 +31,8 @@
   display: flex;
   justify-content: space-between;
   button {
+    font-size: 1.4rem;
+
     font-family: Poppins;
     width: 11rem;
     border: 2px solid grey(dark);
@@ -42,6 +44,7 @@
 
 .learn-more-btn {
   background-color: grey(white);
+  color: grey(dark);
 }
 
 .start-plan-btn {

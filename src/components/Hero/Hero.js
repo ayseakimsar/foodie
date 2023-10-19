@@ -4,11 +4,12 @@ import "./Hero.scss";
 
 export default function Hero({ isSticky }) {
   console.log(window.innerWidth);
+  console.log(isSticky);
   return (
     <div className={`hero ${isSticky ? "hero-padding" : ""}`}>
       <div className="hero-content">
         <h1 className="hero-heading">
-          Guilt-Free Goodness, Right to Your Address
+          <span>Guilt-Free Goodness,</span> <span>Right to Your Address</span>
         </h1>
         <p className="hero-text">
           This personalized 365-day food subscription is designed to help you
@@ -16,8 +17,10 @@ export default function Hero({ isSticky }) {
           preferences and nutritional requirements.
         </p>
         <div className="hero-btns">
-          <button className="hero-btn learn-more-btn">Learn More</button>
-          <button className="hero-btn start-btn">Start Eating Well</button>
+          <button className="hero-btn hero__learn-more-btn">Learn More</button>
+          <button className="hero-btn hero__start-btn">
+            Start Eating Well
+          </button>
         </div>
       </div>
 

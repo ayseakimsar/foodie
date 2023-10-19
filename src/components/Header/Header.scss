@@ -1,5 +1,5 @@
 .header {
-  width: 100%;
+  width: 100vw;
   height: 8rem;
   display: flex;
   justify-content: space-between;
@@ -17,13 +17,23 @@
   z-index: 100;
 }
 
-.open-nav-btn {
-  background-color: transparent;
-  border: none;
+.header__logo {
+  width: 14rem;
   cursor: pointer;
 }
 
-@media screen and (max-width: 3800px) {
+.nav__btn {
+  position: relative;
+  width: 4rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2500;
+}
+
+// media queries for navigation
+
+@media (min-width: 901px) {
   .header__desktop-nav {
     display: block;
   }
@@ -33,7 +43,7 @@
   }
 }
 
-@media screen and (max-width: 850px) {
+@media (max-width: 900px) {
   .header__desktop-nav {
     display: none;
   }
