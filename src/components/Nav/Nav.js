@@ -1,13 +1,13 @@
 import { Link } from "react-scroll";
 
-export default function Nav({ setIsNavOpen, className }) {
+export default function Nav({ setIsNavOpen }) {
   return (
     <nav className="nav">
       <Link
         to="how-it-works"
         smooth={true}
-        offset={-80}
-        duration={400}
+        offset={-120}
+        duration={300}
         className="nav-link"
         onClick={() => setIsNavOpen(false)}
       >
@@ -17,7 +17,7 @@ export default function Nav({ setIsNavOpen, className }) {
         to="meal-plans"
         smooth={true}
         offset={-100}
-        duration={400}
+        duration={300}
         className="nav-link"
         onClick={() => setIsNavOpen(false)}
       >
@@ -28,7 +28,7 @@ export default function Nav({ setIsNavOpen, className }) {
         to="testimonials"
         smooth={true}
         offset={-120}
-        duration={400}
+        duration={300}
         className="nav-link"
         onClick={() => setIsNavOpen(false)}
       >
@@ -37,7 +37,7 @@ export default function Nav({ setIsNavOpen, className }) {
       <Link
         to="pricing"
         smooth={true}
-        duration={400}
+        duration={300}
         offset={-120}
         className="nav-link"
         onClick={() => setIsNavOpen(false)}
@@ -47,7 +47,7 @@ export default function Nav({ setIsNavOpen, className }) {
       <Link
         to="cta"
         smooth={true}
-        duration={400}
+        duration={300}
         offset={-110}
         className="nav-link"
         onClick={() => setIsNavOpen(false)}

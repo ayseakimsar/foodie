@@ -33,3 +33,19 @@
     font-weight: 900;
   }
 }
+
+@media screen and (min-width: 860px) {
+  .testimonials {
+    flex-direction: row;
+    margin-top: 4rem;
+    gap: 2rem;
+  }
+
+  .see-more-btn-testimonials {
+    font-size: 1.4rem;
+
+    span {
+      font-size: 2rem;
+    }
+  }
+}

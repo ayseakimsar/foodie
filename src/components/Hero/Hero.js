@@ -1,10 +1,9 @@
 import { ReactComponent as HeroSVGMobile } from "../../assets/svg/hero-svg.svg";
 import { ReactComponent as HeroSVGDesktop } from "../../assets/svg/hero.svg";
 import "./Hero.scss";
+import { Link } from "react-scroll";
 
 export default function Hero({ isSticky }) {
-  console.log(window.innerWidth);
-  console.log(isSticky);
   return (
     <div className={`hero ${isSticky ? "hero-padding" : ""}`}>
       <div className="hero-content">
@@ -17,10 +16,25 @@ export default function Hero({ isSticky }) {
           preferences and nutritional requirements.
         </p>
         <div className="hero-btns">
-          <button className="hero-btn hero__learn-more-btn">Learn More</button>
-          <button className="hero-btn hero__start-btn">
+          <Link
+            to="how-it-works"
+            smooth={true}
+            duration={300}
+            offset={-120}
+            className="hero-btn hero__learn-more-btn"
+          >
+            Learn More
+          </Link>
+
+          <Link
+            to="cta"
+            smooth={true}
+            duration={300}
+            offset={-110}
+            className="hero-btn hero__start-btn"
+          >
             Start Eating Well
-          </button>
+          </Link>
         </div>
       </div>
 

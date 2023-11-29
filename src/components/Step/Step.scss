@@ -59,3 +59,129 @@
     justify-content: center;
   }
 }
+
+@media screen and (min-width: 800px) {
+  .step-heading {
+    font-size: 1.6rem;
+  }
+
+  .step-text {
+    font-size: 1.4rem;
+    width: 22rem;
+  }
+  .step-svg {
+    width: 11rem;
+  }
+  .step1 {
+    position: absolute;
+    top: 5rem;
+    left: 15%;
+    transform: translate(-15%, 0);
+  }
+  .step2 {
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    .step-svg {
+      width: 14rem;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .step3 {
+    position: absolute;
+    top: 1rem;
+    left: 85%;
+    transform: translate(-85%, 0);
+
+    .step-svg {
+      width: 14rem;
+    }
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  .step-heading {
+    font-size: 1.3rem;
+  }
+
+  .step-text {
+    font-size: 1.1rem;
+    width: 14rem;
+  }
+  .step-svg {
+    width: 8rem;
+  }
+  .step1 {
+    position: absolute;
+    top: 5rem;
+    left: 15%;
+    transform: translate(-15%, 0);
+  }
+  .step2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    .step-svg {
+      width: 11rem;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .step3 {
+    position: absolute;
+    top: 3rem;
+    left: 85%;
+    transform: translate(-85%, 0);
+    .step-svg {
+      width: 12rem;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 700px) {
+  .step-heading {
+    font-size: 1.3rem;
+  }
+
+  .step-text {
+    font-size: 1.1rem;
+    width: 14rem;
+  }
+  .step-svg {
+    width: 8rem;
+  }
+  .step1 {
+    position: absolute;
+    top: 5rem;
+    left: 15%;
+    transform: translate(-15%, 0);
+  }
+  .step2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    .step-svg {
+      width: 11rem;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .step3 {
+    position: absolute;
+    top: 3rem;
+    left: 85%;
+    transform: translate(-85%, 0);
+    .step-svg {
+      width: 12rem;
+    }
+  }
+}

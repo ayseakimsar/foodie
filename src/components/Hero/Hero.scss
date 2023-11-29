@@ -62,6 +62,8 @@
   &-btn {
     width: clamp(12rem, 40vw, 18rem);
     height: 5rem;
+    line-height: 5rem;
+    text-align: center;
     border: none;
     border-radius: 10px;
     color: grey(white);
@@ -89,7 +91,7 @@
 }
 
 .hero-padding {
-  padding-top: 9rem;
+  padding-top: 8rem;
 }
 
 @media screen and (min-width: 1400px) {

@@ -27,8 +27,8 @@
 }
 
 .cards {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto;
   align-items: center;
   gap: 2rem;
   margin-top: 2.5rem;
@@ -42,6 +42,7 @@
   letter-spacing: 0.04rem;
   margin-top: 6rem;
   text-align: center;
+  text-shadow: 0 3px 4px $primary-color-darker;
 }
 
 .see-more-btn {
@@ -76,6 +77,57 @@
   font-weight: 700;
   border: 3px solid white;
   padding: 2rem 2rem;
-  margin-top: 4rem;
+  margin-top: 8rem;
   margin-bottom: 10rem;
+  transition: all 0.2s linear;
+  cursor: pointer;
+
+  &:hover {
+    background-color: white;
+    color: $primary-color;
+  }
+}
+.last-meal-card {
+  display: none;
+}
+
+@media screen and (min-width: 1400px) {
+  .cards {
+    grid-template-columns: repeat(3, auto);
+    column-gap: 3rem;
+    row-gap: 4rem;
+  }
+  .meal-plans {
+    border-radius: 50% 76% 59% 70% / 23% 27% 35% 33%;
+  }
+  .last-meal-card {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1400px) {
+  .cards {
+    grid-template-columns: repeat(2, auto);
+    column-gap: 3rem;
+    row-gap: 4rem;
+  }
+
+  .see-more-btn {
+    width: 15rem;
+    padding: 2rem 2rem;
+    align-self: center;
+    justify-self: center;
+    margin: 0;
+    border: white 3px solid;
+    background-color: transparent;
+    color: white;
+    border-radius: 30px;
+    span {
+      display: none;
+    }
+  }
+
+  .last-meal-card {
+    display: block;
+  }
 }

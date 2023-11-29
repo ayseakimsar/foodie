@@ -10,12 +10,16 @@
   }
 
   &-illustration {
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   &-card {
-    max-width: 32rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
     border-radius: 2rem;
     border: 5px solid grey(dark);
     background: grey(dark);
@@ -44,7 +48,7 @@
   }
 }
 
-.form {
+.cta-form {
   display: flex;
   flex-direction: column;
   margin-bottom: 10rem;
@@ -53,6 +57,7 @@
 }
 
 .input {
+  width: 100%;
   color: grey(medium);
   outline: none;
   height: 4rem;
@@ -91,7 +96,11 @@ input:focus {
 }
 
 .sign-up-now-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: grey(white);
+  height: 4rem;
   text-align: center;
   font-family: Poppins;
   font-size: 1.8rem;
@@ -100,5 +109,78 @@ input:focus {
   border: none;
   border-radius: 1.2rem;
   padding: 1rem 2rem;
-  margin-top: 3.2rem;
+  margin-top: 3.5rem;
+}
+
+@media screen and (min-width: 900px) {
+  .cta-card {
+    width: 80%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-template-rows: repeat(2, auto);
+    align-items: normal;
+  }
+
+  .cta-content {
+    grid-column: 1/-1;
+    grid-row: 1;
+    padding: 0 2rem;
+    width: 90%;
+  }
+
+  .cta-heading {
+    padding: 0;
+    text-align: start;
+    font-size: 3rem;
+  }
+
+  .cta-text {
+    padding: 0;
+    margin: 0;
+    margin-top: 2rem;
+    text-align: start;
+  }
+
+  .label {
+    margin: 0.5rem;
+    padding: 0;
+  }
+  .name-area,
+  .email-area {
+    margin-bottom: 1rem;
+  }
+
+  .cta-form {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    margin-bottom: 6rem;
+
+    &--hear-us {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+  }
+
+  .input {
+    width: 85%;
+    font-size: 1.2rem;
+  }
+  .sign-up-now-btn {
+    width: 85%;
+    display: flex;
+    align-self: end;
+  }
+
+  .cta-illustration {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    align-items: end;
+  }
 }

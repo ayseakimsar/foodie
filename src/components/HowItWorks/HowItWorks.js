@@ -2,6 +2,7 @@ import SectionHeader from "../SectionHeader/SectionHeader";
 import Step from "../Step/Step";
 import "./HowItWorks.scss";
 import { ReactComponent as PathSVG } from "../../assets/svg/path.svg";
+import { ReactComponent as PathSVGMobile } from "../../assets/svg/path-mobile.svg";
 import { ReactComponent as Step1SVG } from "../../assets/svg/step1.svg";
 import { ReactComponent as Step2SVG } from "../../assets/svg/step2.svg";
 import { ReactComponent as Step3SVG } from "../../assets/svg/step3.svg";
@@ -9,6 +10,7 @@ import { ReactComponent as Step3SVG } from "../../assets/svg/step3.svg";
 export default function HowItWorks() {
   return (
     <div className="how-it-works">
+      <div className="how-it-works__background"></div>
       <SectionHeader
         primaryHeading="how it works"
         secondaryHeading="Get your daily health boost with just three easy steps."
@@ -17,6 +19,9 @@ export default function HowItWorks() {
       <div className="steps">
         <div className="path">
           <PathSVG />
+        </div>
+        <div className="path-mobile">
+          <PathSVGMobile />
         </div>
         <Step
           stepNumber={1}

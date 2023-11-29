@@ -2,7 +2,7 @@
 
 .card {
   padding: 3rem 2rem;
-  min-width: 25rem;
+  width: 27rem;
   height: 32rem;
   background-color: grey(white);
   border-radius: 14px;
@@ -12,7 +12,7 @@
 }
 
 .card-heading {
-  color: grey(dark);
+  color: grey(medium);
   font-family: Poppins;
   font-size: 2rem;
   font-weight: 600;
@@ -23,6 +23,7 @@
 .card-image {
   width: 23rem;
   height: 16rem;
+  width: 100%;
   border-radius: 14px;
   margin-bottom: 2rem;
 }
@@ -35,7 +36,7 @@
 
     font-family: Poppins;
     width: 11rem;
-    border: 2px solid grey(dark);
+    border: 2px solid grey(medium);
     border-radius: 4px;
     font-weight: 600;
     height: 4rem;
@@ -44,10 +45,65 @@
 
 .learn-more-btn {
   background-color: grey(white);
-  color: grey(dark);
+  color: grey(medium);
 }
 
 .start-plan-btn {
   background-color: grey(dark);
   color: grey(white);
+}
+//desktop
+
+@media screen and (min-width: 1200px) {
+  .card {
+    padding: 2.55rem 1.7rem; /* 3rem 2rem */
+    width: 22.95rem; /* 27rem */
+    height: 27.2rem; /* 32rem */
+    background-color: grey(white);
+    border-radius: 11.9px; /* 14px */
+    box-shadow: 0px 3.4px 5.95px 0px rgba(0, 0, 0, 0.25); /* 0px 4px 7px 0px rgba(0, 0, 0, 0.25) */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-heading {
+    color: grey(medium);
+    font-family: Poppins;
+    font-size: 1.7rem; /* 2rem */
+    font-weight: 600;
+    letter-spacing: -0.115px; /* -0.1px */
+    margin-bottom: 2.125rem; /* 2.5rem */
+  }
+
+  .card-image {
+    width: 19.55rem; /* 23rem */
+    height: 13.6rem; /* 16rem */
+    width: 100%;
+    border-radius: 11.9px; /* 14px */
+    margin-bottom: 1.7rem; /* 2rem */
+  }
+
+  .btns {
+    display: flex;
+    justify-content: space-between;
+    button {
+      font-size: 1.19rem; /* 1.4rem */
+      font-family: Poppins;
+      width: 9.35rem; /* 11rem */
+      border: 1.7px solid grey(medium); /* 2px solid grey(medium) */
+      border-radius: 3.4px; /* 4px */
+      font-weight: 600;
+      height: 3.4rem; /* 4rem */
+    }
+  }
+
+  .learn-more-btn {
+    background-color: grey(white);
+    color: grey(medium);
+  }
+
+  .start-plan-btn {
+    background-color: grey(dark);
+    color: grey(white);
+  }
 }

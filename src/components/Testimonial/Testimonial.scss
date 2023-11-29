@@ -8,6 +8,8 @@
   box-shadow: 0px 6px 0px 0px $primary-color;
   position: relative;
   margin-left: 2rem;
+  justify-self: center;
+  align-self: center;
 }
 
 .card-content {
@@ -17,11 +19,15 @@
   padding-right: 1rem;
 }
 
-.customer-image {
-  width: 7.5rem;
+.avatar {
   position: absolute;
   top: 50%;
   left: 0;
+}
+
+.customer-image {
+  position: absolute;
+  width: 7.5rem;
   transform: translate(-50%, -50%);
   z-index: 30;
   display: flex;
@@ -30,6 +36,7 @@
 }
 
 .customer-image-background {
+  position: absolute;
   width: 9rem;
   height: 9rem;
   background-color: white;
@@ -58,4 +65,56 @@
   font-weight: 400;
   line-height: 152.5%;
   letter-spacing: 0.014rem;
+}
+
+@media screen and (min-width: 1301px) {
+  .testimonial {
+    width: 20rem;
+    height: 32rem;
+    box-shadow: 0px 8px 0px 0px $primary-color;
+    border: 3.5px solid grey(dark);
+  }
+  .customer-image {
+    width: 5rem;
+  }
+
+  .customer-image-background {
+    width: 7rem;
+    height: 7rem;
+  }
+  .customer-comment {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 860px) and (max-width: 1300px) {
+  .testimonial {
+    padding: 0 1rem;
+    width: 23rem;
+    height: 35rem;
+  }
+  .customer-image {
+    width: 6rem;
+  }
+
+  .customer-image-background {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .avatar {
+    top: 15%;
+    left: 50%;
+  }
+  .card-content {
+    padding: 6rem 1rem 0 1rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .customer-comment {
+    text-align: center;
+  }
 }

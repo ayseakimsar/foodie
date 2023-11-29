@@ -1,9 +1,15 @@
 import SectionHeader from "../SectionHeader/SectionHeader";
 import "./MealPlans.scss";
 import lowCarbImage from "../../assets/images/low-carb.jpg";
+import mediterraneanImage from "../../assets/images/ca-creative-bpPTlXWTOvg-unsplash.jpg";
+import veganImage from "../../assets/images/vegan.jpg";
+import ketoImage from "../../assets/images/keto.jpg";
+import pescatarianImage from "../../assets/images/pescatarian.jpg";
+import allergenFreeImage from "../../assets/images/allergen-free.jpg";
 
 import MealPlanCard from "../MealPlanCard/MealPlanCard";
 export default function MealPlans() {
+  console.log(window.innerWidth);
   return (
     <div className="meal-plans-container">
       <div className="meal-plans">
@@ -17,18 +23,23 @@ export default function MealPlans() {
         </div>
         <h4 className="plan-category">Popular Plans</h4>
         <div className="cards">
-          <MealPlanCard planName="Low-carb" image={lowCarbImage} />
-          <MealPlanCard planName="Low-carb" image={lowCarbImage} />
+          <MealPlanCard planName="High-protein" image={mediterraneanImage} />
+          <MealPlanCard planName="Vegan" image={veganImage} />
+          <MealPlanCard planName="Allergen-Free" image={allergenFreeImage} />
+          <div className="last-meal-card">
+            <MealPlanCard planName="Low-fat" image={lowCarbImage} />
+          </div>
         </div>
-        <button className="see-more-btn">See more →</button>
+
         <h4 className="plan-category">Family Plans</h4>
         <div className="cards">
-          <MealPlanCard planName="Low-carb" image={lowCarbImage} />
-          <MealPlanCard planName="Low-carb" image={lowCarbImage} />
+          <MealPlanCard planName="Allergen-Free" image={allergenFreeImage} />
+          <MealPlanCard planName="High-protein" image={mediterraneanImage} />
+          <MealPlanCard planName="Pescatarian" image={pescatarianImage} />
+          <div className="last-meal-card">
+            <MealPlanCard planName="Low-fat" image={lowCarbImage} />
+          </div>
         </div>
-        <button className="see-more-btn">
-          See more <span className="right-arrow">→</span>
-        </button>
 
         <button className="see-all-btn">See all plans</button>
       </div>
