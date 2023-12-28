@@ -3,7 +3,6 @@ import "./MealPlans.scss";
 import lowCarbImage from "../../assets/images/low-carb.jpg";
 import mediterraneanImage from "../../assets/images/ca-creative-bpPTlXWTOvg-unsplash.jpg";
 import veganImage from "../../assets/images/vegan.jpg";
-import ketoImage from "../../assets/images/keto.jpg";
 import pescatarianImage from "../../assets/images/pescatarian.jpg";
 import allergenFreeImage from "../../assets/images/allergen-free.jpg";
 
